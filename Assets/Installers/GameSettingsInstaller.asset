@@ -13,13 +13,33 @@ MonoBehaviour:
   m_Name: GameSettingsInstaller
   m_EditorClassIdentifier: 
   settings:
-    gameSettings:
-      initialWaveSize: 10
+    boatSettings:
+      weapons:
+      - name: Fast Gun
+        fireTimeout: 0.07
+        bulletSettings:
+          size: 0.2
+          speed: 15
+          lifeTime: 5
+          damage: 1
+          color: {r: 0.8426006, g: 1, b: 0, a: 0}
+      - name: Slow Gun
+        fireTimeout: 0.15
+        bulletSettings:
+          size: 0.4
+          speed: 12
+          lifeTime: 5
+          damage: 2
+          color: {r: 1, g: 0.36485946, b: 0, a: 0}
+      speed: 10
+      rotationSpeed: 200
+      acceleration: 10
+    waveSettings:
+      initialWaveSize: 3
       waveSpawnTimeout: 10
-      additionalWaveSize: 3
-      initialEnemySpeed: 2
+      additionalWaveSize: 1
+      initialEnemySpeed: 1
       enemySpeedIncrease: 0.1
     installerSettings:
-      boatPrefab: {fileID: 0}
-      enemyPrefab: {fileID: 0}
-      bulletPrefab: {fileID: 0}
+      enemyPrefab: {fileID: 2217618989604483845, guid: d16874ab702ed5349aafb2a76433d5a0, type: 3}
+      bulletPrefab: {fileID: 4588841059743784362, guid: ccb4371b352cd7846ae37c26dc13adb5, type: 3}

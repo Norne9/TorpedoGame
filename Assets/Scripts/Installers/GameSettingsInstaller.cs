@@ -6,7 +6,7 @@ public class GameSettingsInstaller : ScriptableObjectInstaller<GameSettingsInsta
     public GameSettings settings;
     public override void InstallBindings() {
         Container.BindInstance(settings.boatSettings);
-        Container.BindInstance(settings.gameSettings);
+        Container.BindInstance(settings.waveSettings);
         Container.BindInstance(settings.installerSettings);
     }
 }

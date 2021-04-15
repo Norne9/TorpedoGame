@@ -5,6 +5,6 @@ using UnityEngine;
 [Serializable]
 public class GameSettings {
     public Boat.Settings boatSettings;
-    public GameController.Settings gameSettings;
+    public TorpedoManager.Settings waveSettings;
     public GameInstaller.Settings installerSettings;
 }
